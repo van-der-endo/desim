@@ -18,7 +18,7 @@ Click the budge below to open it in [Google colaboratory](http://colab.research.
 
 ### Stable version (recommended)
 
-[![open stable version in colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/deshima-dev/deshima-sensitivity/blob/v0.3.1/sensitivity.ipynb)
+[![open stable version in colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/deshima-dev/deshima-sensitivity/blob/v0.3.2/sensitivity.ipynb)
 
 ### Latest version
 
@@ -29,7 +29,7 @@ In the case of running it in a local Python environment, please follow the requi
 ## Requirements
 
 - **Python:** 3.10, 3.11, 3.12, and 3.13 (tested by the authors)
-- **Dependencies:** See [pyproject.toml](https://github.com/deshima-dev/deshima-sensitivity/blob/v0.3.1/pyproject.toml)
+- **Dependencies:** See [pyproject.toml](https://github.com/deshima-dev/deshima-sensitivity/blob/v0.3.2/pyproject.toml)
 
 ## Installation
 
