@@ -249,7 +249,7 @@ def spectrometer_sensitivity(
 
     # Collect efficiencies at the same temperature
     eta_M1 = eta_M1_ohmic * eta_M1_spill
-    eta_wo = eta_Al_ohmic ** n_wo_mirrors * eta_wo_spill
+    eta_wo = eta_Al_ohmic**n_wo_mirrors * eta_wo_spill
     eta_chip = eta_lens_antenna_rad * eta_circuit
 
     # Forward efficiency: does/should not include window loss
@@ -260,7 +260,7 @@ def spectrometer_sensitivity(
     )
 
     # Calcuate eta. scalar/vector depending on F.
-    if np.size(R)==1:
+    if np.size(R) == 1:
         eta_atm = eta_atm_func(F=F, pwv=pwv, EL=EL, R=R)
     else:
         eta_atm = np.zeros(len(R))
