@@ -3,7 +3,7 @@ message: "If you use this software, please cite it as below."
 
 title: "deshima-sensitivity"
 abstract: "Sensitivity calculator for DESHIMA-type spectrometers"
-version: 0.3.1
+version: 0.3.2
 date-released: 2024-12-11
 license: "MIT"
 doi: "10.5281/zenodo.3966839"

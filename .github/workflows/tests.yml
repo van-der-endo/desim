@@ -5,10 +5,12 @@ on:
     branches:
       - main
       - deshima2.0
+      - v0.3
   pull_request:
     branches:
       - main
       - deshima2.0
+      - v0.3
 
 jobs:
   job:
@@ -31,6 +33,6 @@ jobs:
         with:
           poetry-version: "1.8.3"
       - run: poetry install
-      - run: black --check decode docs tests
+      - run: black --check deshima_sensitivity docs tests
       - run: pytest -v tests
       - run: docs/build
