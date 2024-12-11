@@ -1,36 +1,36 @@
 name: Tests
 
 on:
+  push:
+    branches:
+      - main
+      - deshima2.0
   pull_request:
     branches:
-      - master
-      - develop
+      - main
+      - deshima2.0
 
 jobs:
-  test:
-    name: Test (Python ${{ matrix.python-version }})
+  job:
+    name: Test (Python ${{ matrix.python }})
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: [3.7, 3.8, 3.9]
     env:
-        TESTED_DIRS: deshima_sensitivity docs tests
+      POETRY_VIRTUALENVS_CREATE: false
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.10", "3.11", "3.12", "3.13"]
     steps:
-      - uses: actions/checkout@v2
-      - name: Setup Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v2
+      - uses: actions/checkout@v4
         with:
-          python-version: ${{ matrix.python-version }}
-      - name: Install dependencies
-        run: |
-          sudo apt install pandoc
-          pip install poetry
-          poetry install
-      - name: Test code format (Black)
-        run: poetry run black --check ${TESTED_DIRS}
-      - name: Test code style (Flake8)
-        run: poetry run flake8 ${TESTED_DIRS}
-      - name: Test package (pytest)
-        run: poetry run pytest -v tests
-      - name: Test docs building (Sphinx)
-        run: poetry run etc/builddocs
+          submodules: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - uses: abatilo/actions-poetry@v3
+        with:
+          poetry-version: "1.8.3"
+      - run: poetry install
+      - run: black --check decode docs tests
+      - run: pytest -v tests
+      - run: docs/build
