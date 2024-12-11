@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+
+title: "deshima-sensitivity"
+abstract: "Sensitivity calculator for DESHIMA-type spectrometers"
+version: 0.3.1
+date-released: 2024-12-11
+license: "MIT"
+doi: "10.5281/zenodo.3966839"
+url: "https://github.com/deshima-dev/deshima-sensitivity"
+authors:
+  - given-names: "Akira"
+    family-names: "Endo"
+    affiliation: "Delft University of Technology"
+    orcid: "https://orcid.org/0000-0003-0379-2341"
+  - given-names: "Akio"
+    family-names: "Taniguchi"
+    affiliation: "Kitami Institute of Technology"
+    orcid: "https://orcid.org/0000-0002-9695-6183"

@@ -1,10 +1,10 @@
 # deshima-sensitivity
 
-[![PyPI](https://img.shields.io/pypi/v/deshima-sensitivity.svg?label=PyPI&style=flat-square)](https://pypi.org/pypi/deshima-sensitivity/)
-[![Python](https://img.shields.io/pypi/pyversions/deshima-sensitivity.svg?label=Python&color=yellow&style=flat-square)](https://pypi.org/pypi/deshima-sensitivity/)
-[![Test](https://img.shields.io/github/workflow/status/deshima-dev/deshima-sensitivity/Test?logo=github&label=Test&style=flat-square)](https://github.com/deshima-dev/deshima-sensitivity/actions)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg?label=License&style=flat-square)](LICENSE)
-[![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.3966839-blue?style=flat-square)](https://doi.org/10.5281/zenodo.3966839)
+[![Release](https://img.shields.io/pypi/v/deshima-sensitivity?label=Release&color=cornflowerblue&style=flat-square)](https://pypi.org/project/deshima-sensitivity/)
+[![Python](https://img.shields.io/pypi/pyversions/deshima-sensitivity?label=Python&color=cornflowerblue&style=flat-square)](https://pypi.org/project/deshima-sensitivity/)
+[![Downloads](https://img.shields.io/pypi/dm/deshima-sensitivity?label=Downloads&color=cornflowerblue&style=flat-square)](https://pepy.tech/project/deshima-sensitivity)
+[![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.3966839-cornflowerblue?style=flat-square)](https://doi.org/10.5281/zenodo.3966839)
+[![Tests](https://img.shields.io/github/actions/workflow/status/deshima-dev/deshima-sensitivity/tests.yaml?label=Tests&style=flat-square)](https://github.com/deshima-dev/deshima-sensitivity/actions)
 
 Sensitivity calculator for DESHIMA-type spectrometers
 
@@ -28,11 +28,11 @@ In the case of running it in a local Python environment, please follow the requi
 
 ## Requirements
 
-- **Python:** 3.7, 3.8, or 3.9 (tested by the authors)
-- **Dependencies:** See [pyproject.toml](https://github.com/deshima-dev/deshima-sensitivity/blob/master/pyproject.toml)
+- **Python:** 3.10, 3.11, 3.12, and 3.13 (tested by the authors)
+- **Dependencies:** See [pyproject.toml](https://github.com/deshima-dev/deshima-sensitivity/blob/v0.3.1/pyproject.toml)
 
 ## Installation
 
 ```shell
-$ pip install deshima-sensitivity
+pip install deshima-sensitivity
 ```
