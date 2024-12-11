@@ -2,35 +2,32 @@
 name = "deshima-sensitivity"
 version = "0.3.1"
 description = "Sensitivity calculator for DESHIMA-type spectrometers"
-authors = ["Akira Endo <a.endo@tudelft.nl>"]
-maintainers = [
-    "Akio Taniguchi <taniguchi@a.phys.nagoya-u.ac.jp>",
-    "Yohei Togami <y.togami@a.phys.nagoya-u.ac.jp>",
-    "Keiichi Matsuda <matsuda@a.phys.nagoya-u.ac.jp>",
-    "Masato Hagimoto <hagimoto@a.phys.nagoya-u.ac.jp>",
-    "Stefanie Brackenhoff <s.a.brackenhoff@student.tudelft.nl>",
+authors = [
+    "Akira Endo <a.endo@tudelft.nl>",
+    "Akio Taniguchi <taniguchi.akio@gmail.com>",
 ]
 license = "MIT"
 readme = "README.md"
 homepage = "https://github.com/deshima-dev/deshima-sensitivity"
-documentation = "https://deshima-dev.github.io/deshima-sensitivity/"
+documentation = "https://deshima-dev.github.io/deshima-sensitivity"
 
 [tool.poetry.dependencies]
-python = ">= 3.7, < 3.10"
-matplotlib = "^3.2"
-numpy = "^1.19"
-scipy = "^1.4"
-pandas = "^1.1"
-jupyter-io = "^0.2"
+python = ">=3.10, <3.14"
+matplotlib = ">=3.8"
+numpy = ">=1.26"
+scipy = ">=1.13"
+pandas = ">=2.2"
+jupyter-io = ">=1.0"
 
-[tool.poetry.dev-dependencies]
-black = "^21.5b"
-flake8 = "^3.9"
-jupyterlab = "^3.0"
-pydata-sphinx-theme = "^0.6"
-pytest = "^6.2"
-sphinx = "^4.0"
+[tool.poetry.group.dev.dependencies]
+black = "^24.10"
+ipython = "^8.30"
+myst-parser = "^4.0"
+notebook = "^7.3"
+pydata-sphinx-theme = "^0.16"
+pytest = "^8.3"
+sphinx = "^8.1"
 
 [build-system]
-requires = ["poetry>=0.12"]
-build-backend = "poetry.masonry.api"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
